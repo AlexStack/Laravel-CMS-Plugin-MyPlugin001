@@ -6,13 +6,13 @@
 
 ## Install it via the backend
 
--   Go to the CMS settings page -> Plugin -> search for remote image
+-   Go to the CMS settings page -> Plugin -> search for myplugin001
 -   Find alexstack/laravel-cms-plugin-myplugin001
 -   Click the Install button
 
 ## What the plugin does for us?
 
--   An example of a page-tab plugin
+-   An example of a page-tab plugin include blade and controller files
 
 ## Install it via command line manually
 
