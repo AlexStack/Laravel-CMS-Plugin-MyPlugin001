@@ -1,0 +1,48 @@
+{
+    "name": "alexstack/laravel-cms-plugin-myplugin001",
+    "description": "This is a semi-finished page-tab EXAMPLE plugin, you can change the blade template & Laravel controller to fit your own usage.",
+    "type": "amila-laravel-cms-plugin",
+    "homepage": "https://github.com/AlexStack/Laravel-CMS-Plugin-MyPlugin001",
+    "keywords": [
+        "laravel",
+        "amila laravel cms",
+        "example",
+        "semi-finished",
+        "amila laravel cms plugin"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/AlexStack/Laravel-CMS-Plugin-MyPlugin001/issues"
+    },
+    "authors": [{
+        "name": "Alex",
+        "homepage": "https://github.com/AlexStack/Laravel-CMS-Plugin-MyPlugin001"
+    }],
+    "require": {
+        "php": ">=7.0.0",
+        "alexstack/laravel-cms": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amila\\LaravelCms\\Plugins\\MyPlugin001\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amila\\LaravelCms\\Plugins\\MyPlugin001\\LaravelCmsPluginServiceProvider"
+            ]
+        },
+        "laravel-cms": {
+            "plugin-param-name": "page-tab-myplugin001"
+        }
+    },
+    "scripts": {
+        "post-package-install": [
+            "php artisan migrate --path=./vendor/alexstack/laravel-cms-plugin-myplugin001/src/database/migrations/",
+            "php artisan vendor:publish --provider=Amila\\LaravelCms\\Plugins\\MyPlugin001\\LaravelCmsPluginServiceProvider",
+            "php artisan laravelcms --action=clear"
+        ]
+    }
+}
