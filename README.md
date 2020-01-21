@@ -3,6 +3,7 @@
 -   This is a semi-finished page-tab EXAMPLE plugin of Amila Laravel CMS
 -   The main purpose of this example plugin is to guide you to make your own plugin easily
 -   You can edit the blade template & Laravel controller to fit your own usage
+-   Tutorial: https://www.laravelcms.tech/Laravel-Create-your-own-plugin.html
 
 ## Install it via the backend
 
