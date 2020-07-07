@@ -9,7 +9,8 @@
         <div class="text-success">This is a semi-finished plugin, you can change the blade template & Laravel
             controller to fit your own
             usage.
-            <a href="https://www.laravelcms.tech/Laravel-Create-your-own-plugin.html" target="_blank">Tutorial</a>
+            <a href="https://www.laravelcms.tech/Laravel-Create-your-own-plugin.html" target="_blank"
+                class="text-primary">Tutorial</a>
         </div>
 
         {{-- Display variable from the CMS settings --}}
